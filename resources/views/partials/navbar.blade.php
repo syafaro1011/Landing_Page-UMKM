@@ -1,7 +1,10 @@
 <nav class="navbar navbar-expand-lg shadow-sm sticky-top" id="mainNavbar">
     <div class="container">
         <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-            <span class="brand-icon">🌶️</span>
+            <span class="brand-icon">
+                <img src="https://media.discordapp.net/attachments/1099859505891790959/1486351076201463979/logo_1.png?ex=69c52fcf&is=69c3de4f&hm=d1b29ee6036e3020e28fbb9c5d789692ec2bd2b1057663db1b1b859745f439b2&=&format=webp&quality=lossless&width=827&height=831" alt="Logo"
+                    style="height: 60px; width: auto; object-fit: contain;">
+            </span>
             <span class="brand-text">{{ $umkm_name ?? 'UMKM Seblak Kering' }}</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -22,7 +25,7 @@
                     <a class="nav-link nav-pill" href="#kontak">Kontak</a>
                 </li>
                 <li class="nav-item ms-2">
-                    <a class="btn btn-order" href="https://wa.me/6281234567890" target="_blank">
+                    <a class="btn btn-order" href="https://wa.me/6285221405030" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             viewBox="0 0 16 16" style="margin-right:6px;margin-top:-2px">
                             <path

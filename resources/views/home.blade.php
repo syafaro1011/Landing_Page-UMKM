@@ -18,7 +18,7 @@
                 {{-- Slide 1 --}}
                 <div class="carousel-item active h-100">
                     <div class="hero-slide"
-                        style="background-image: url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1400&h=700&fit=crop')">
+                        style="background-image: url('https://media.discordapp.net/attachments/1099859505891790959/1486323847052529795/seblak1400-700.png?ex=69c51673&is=69c3c4f3&hm=94e32752f4dac6cf79ec8ad31aa25fa034ce786ede7b9f88550de571ea5df2d1&=&format=webp&quality=lossless&width=1427&height=706')">
                         <div class="hero-overlay"></div>
                         <div class="container h-100 d-flex align-items-center">
                             <div class="hero-content">
@@ -34,17 +34,17 @@
                                                 d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
                                         </svg>
                                     </a>
-                                    <a href="https://wa.me/6281234567890" target="_blank" class="btn-hero-ghost">Pesan via
+                                    <a href="https://wa.me/6285221405030" target="_blank" class="btn-hero-ghost">Pesan via
                                         WA</a>
                                 </div>
                                 <div class="hero-stats mt-5">
                                     <div class="stat-item">
-                                        <span class="stat-number">500+</span>
+                                        <span class="stat-number">1000+</span>
                                         <span class="stat-label">Pelanggan Puas</span>
                                     </div>
                                     <div class="stat-divider"></div>
                                     <div class="stat-item">
-                                        <span class="stat-number">8+</span>
+                                        <span class="stat-number">2</span>
                                         <span class="stat-label">Varian Rasa</span>
                                     </div>
                                     <div class="stat-divider"></div>
@@ -61,7 +61,7 @@
                 {{-- Slide 2 --}}
                 <div class="carousel-item h-100">
                     <div class="hero-slide"
-                        style="background-image: url('https://images.unsplash.com/photo-1564834724105-918b73d1b9e0?w=1400&h=700&fit=crop')">
+                        style="background-image: url('https://media.discordapp.net/attachments/1099859505891790959/1486327467156312094/bumbu1400-700.png?ex=69c519d2&is=69c3c852&hm=d7cf3313847043fde1df339b2a0aa30f2bfd6821483b282f368f2566c843a867&=&format=webp&quality=lossless&width=1427&height=706')">
                         <div class="hero-overlay"></div>
                         <div class="container h-100 d-flex align-items-center">
                             <div class="hero-content">
@@ -131,13 +131,23 @@
                 </div>
                 <div class="trust-sep">·</div>
                 <div class="trust-item">
-                    <span class="trust-icon">🚀</span>
-                    <span>Pengiriman Cepat</span>
+                    <span class="trust-icon">🍜</span>
+                    <span>2 Varian Rasa</span>
                 </div>
                 <div class="trust-sep">·</div>
                 <div class="trust-item">
                     <span class="trust-icon">🌶️</span>
                     <span>Level Pedas Beragam</span>
+                </div>
+                <div class="trust-sep">·</div>
+                <div class="trust-item">
+                    <span class="trust-icon">✅</span>
+                    <span>Bersertifikat Halal</span>
+                </div>
+                <div class="trust-sep">·</div>
+                <div class="trust-item">
+                    <span class="trust-icon">🚀</span>
+                    <span>Pengiriman Cepat</span>
                 </div>
             </div>
         </div>
@@ -152,7 +162,7 @@
             <div class="section-header">
                 <span class="section-label">Menu Kami</span>
                 <h2 class="section-title">Katalog <span class="text-fire">Varian Rasa</span></h2>
-                <p class="section-desc">Pilih level pedas yang sesuai dengan keberanianmu! Dari yang ringan hingga yang
+                <p class="section-desc">Pilih varian rasa dan level pedas yang sesuai dengan keberanianmu! Dari yang ringan hingga yang
                     bikin nangis bahagia 🥵</p>
             </div>
 
@@ -174,7 +184,7 @@
                                 <h5 class="product-name">{{ $variant['nama'] }}</h5>
                                 <p class="product-price">{{ $variant['harga'] }}</p>
 
-                                <a href="https://wa.me/6281234567890?text=Halo, saya mau pesan {{ urlencode($variant['nama']) }}"
+                                <a href="https://wa.me/6285221405030?text=Halo, saya mau pesan {{ urlencode($variant['nama']) }}"
                                     target="_blank" class="btn-buy">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
                                         viewBox="0 0 16 16">
@@ -203,7 +213,7 @@
                     <h3 class="cta-title">Siap Cobain Level Pedas Tertinggi?</h3>
                     <p class="cta-sub">Pesan sekarang via WhatsApp dan dapatkan free ongkir untuk pembelian pertama!</p>
                 </div>
-                <a href="https://wa.me/6281234567890" target="_blank" class="btn-cta">
+                <a href="https://wa.me/6285221405030" target="_blank" class="btn-cta">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
                         <path
                             d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592z" />
