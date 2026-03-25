@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/🌶️-UMKM%20Seblak%20Kering-E8170A?style=for-the-badge&labelColor=111111" alt="landing Page UMKM" width="400">
+  <img src="https://img.shields.io/badge/Landing%20Page%20UMKM-E8170A?style=for-the-badge&labelColor=111111" alt="landing Page UMKM" width="400">
 </p>
 
 <p align="center">
