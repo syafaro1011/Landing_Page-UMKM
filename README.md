@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://media.discordapp.net/attachments/1099859505891790959/1486351076201463979/logo_1.png?ex=69c52fcf&is=69c3de4f&hm=d1b29ee6036e3020e28fbb9c5d789692ec2bd2b1057663db1b1b859745f439b2&=&format=webp&quality=lossless&width=827&height=831" alt="UMKM Seblak Kering" width="400">
+  <img src="https://img.shields.io/badge/🌶️-UMKM%20Seblak%20Kering-E8170A?style=for-the-badge&labelColor=111111" alt="landing Page UMKM" width="400">
 </p>
 
 <p align="center">
