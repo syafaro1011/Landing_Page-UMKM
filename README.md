@@ -1,59 +1,215 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="https://img.shields.io/badge/🌶️-UMKM%20Seblak%20Kering-E8170A?style=for-the-badge&labelColor=111111" alt="UMKM Seblak Kering" width="400">
 </p>
 
-## About Laravel
+<p align="center">
+  <a href="https://laravel.com"><img src="https://img.shields.io/badge/Laravel-11.x-FF2D20?style=flat&logo=laravel&logoColor=white" alt="Laravel"></a>
+  <a href="https://tailwindcss.com"><img src="https://img.shields.io/badge/Tailwind_CSS-4.x-06B6D4?style=flat&logo=tailwindcss&logoColor=white" alt="Tailwind CSS"></a>
+  <a href="https://getbootstrap.com"><img src="https://img.shields.io/badge/Bootstrap-5.x-7952B3?style=flat&logo=bootstrap&logoColor=white" alt="Bootstrap"></a>
+  <img src="https://img.shields.io/badge/License-MIT-green?style=flat" alt="License">
+</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🌶️ Tentang Proyek Ini
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+**UMKM Seblak Kering** adalah website profil dan katalog produk digital untuk usaha camilan seblak kering. Website ini dibangun menggunakan framework Laravel dengan tampilan modern, responsif, dan berkarakter — dirancang khusus untuk memperkenalkan produk, menampilkan varian rasa, serta memudahkan pelanggan melakukan pemesanan langsung via WhatsApp.
 
-## Learning Laravel
+Fitur utama website ini meliputi:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+- Halaman beranda dengan hero carousel interaktif dan statistik usaha
+- Katalog varian rasa yang ditampilkan secara dinamis dari data Laravel
+- Trust bar untuk membangun kepercayaan pelanggan
+- Integrasi pemesanan langsung via WhatsApp
+- Navbar sticky transparan dengan efek blur
+- Footer informatif dengan tautan sosial media
+- Desain responsif untuk mobile, tablet, dan desktop
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 📁 Struktur File
 
-## Laravel Sponsors
+```
+resources/
+├── css/
+│   └── app.css              # Seluruh styling kustom + konfigurasi Tailwind
+├── views/
+│   ├── layouts/
+│   │   └── app.blade.php    # Layout utama (wrapper HTML)
+│   ├── partials/
+│   │   ├── navbar.blade.php # Komponen navigasi
+│   │   └── footer.blade.php # Komponen footer
+│   └── home.blade.php       # Halaman beranda
+```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## 🚀 Cara Instalasi
 
-### Premium Partners
+### Prasyarat
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+Pastikan sistem kamu sudah memiliki:
 
-## Contributing
+- PHP >= 8.2
+- Composer
+- Node.js >= 18.x & NPM
+- Database (MySQL / SQLite)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Langkah Instalasi
 
-## Code of Conduct
+**1. Clone repository**
+```bash
+git clone https://github.com/username/umkm-seblak-kering.git
+cd umkm-seblak-kering
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+**2. Install dependensi PHP**
+```bash
+composer install
+```
 
-## Security Vulnerabilities
+**3. Salin file environment dan generate app key**
+```bash
+cp .env.example .env
+php artisan key:generate
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+**4. Install dependensi Node dan build aset**
+```bash
+npm install
+npm run dev
+```
 
-## License
+**5. Jalankan server development**
+```bash
+php artisan serve
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Buka browser dan akses `http://localhost:8000`.
+
+## ⚙️ Konfigurasi
+
+### Environment (`.env`)
+
+Sesuaikan variabel berikut di file `.env`:
+
+```env
+APP_NAME="UMKM Seblak Kering"
+APP_URL=http://localhost:8000
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=umkm_seblak
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+### Data Produk
+
+Data varian rasa saat ini dikelola langsung di Route atau Controller. Contoh struktur data:
+
+```php
+$variants = [
+    [
+        'nama'   => 'Original',
+        'level'  => 'Level 1 🌶️',
+        'harga'  => 'Rp 15.000',
+        'gambar' => 'https://...',
+    ],
+    [
+        'nama'   => 'Extra Pedas',
+        'level'  => 'Level 5 🔥',
+        'harga'  => 'Rp 18.000',
+        'gambar' => 'https://...',
+    ],
+];
+```
+
+### Nomor WhatsApp
+
+Ganti nomor WhatsApp pemesanan di file-file berikut:
+
+| File | Lokasi |
+|---|---|
+| `navbar.blade.php` | Tombol *Pesan Sekarang* |
+| `home.blade.php` | Tombol hero, tombol beli per produk, tombol CTA |
+| `footer.blade.php` | Tombol *Hubungi Kami* |
+
+Cari dan ganti `6281234567890` dengan nomor aktif Anda.
+
+## 🎨 Desain & Styling
+
+Seluruh CSS kustom berada dalam satu file terpusat: `resources/css/app.css`.
+
+### CSS Variables
+
+```css
+:root {
+    --fire-red    : #E8170A;
+    --fire-orange : #F97316;
+    --fire-yellow : #FBBF24;
+    --dark-coal   : #111111;
+    --warm-cream  : #FFF8F0;
+}
+```
+
+### Tipografi
+
+| Jenis | Font | Kegunaan |
+|---|---|---|
+| Display | **Syne 800** | Judul, brand, heading besar |
+| Body | **DM Sans 400–500** | Paragraf, label, tombol |
+
+Font diambil dari Google Fonts dan di-import di bagian atas `app.css`.
+
+### Komponen Utama
+
+- **Navbar** — sticky transparan, backdrop blur, animasi logo berkedip
+- **Hero Carousel** — full viewport height, overlay gradient, stat bar
+- **Product Card** — hover animasi naik, glow bar, badge level pedas
+- **CTA Section** — gradient merah dengan dot pattern
+- **Footer** — dark premium, social buttons, glow radial
+
+## 🛠️ Stack Teknologi
+
+| Teknologi | Versi | Keterangan |
+|---|---|---|
+| [Laravel](https://laravel.com) | 11.x | Framework PHP backend |
+| [Tailwind CSS](https://tailwindcss.com) | 4.x | Utility-first CSS framework |
+| [Bootstrap](https://getbootstrap.com) | 5.x | Komponen UI (carousel, grid, navbar) |
+| [Vite](https://vitejs.dev) | 5.x | Build tool & asset bundler |
+| [Google Fonts](https://fonts.google.com) | — | Syne & DM Sans |
+
+## 📱 Responsivitas
+
+Website dioptimalkan untuk semua ukuran layar menggunakan grid Bootstrap dan breakpoint Tailwind:
+
+| Breakpoint | Tampilan Produk |
+|---|---|
+| `< 576px` (Mobile) | 1 kolom |
+| `≥ 576px` (SM) | 2 kolom |
+| `≥ 768px` (MD) | 2 kolom |
+| `≥ 1200px` (XL) | 4 kolom |
+
+## 📞 Kontak & Pemesanan
+
+Pemesanan dilayani melalui WhatsApp. Tombol pemesanan di seluruh halaman akan otomatis membuka chat WhatsApp dengan pesan pre-filled sesuai produk yang dipilih.
+
+```
+WhatsApp : 0812-3456-7890
+```
+
+## 🤝 Kontribusi
+
+Kontribusi sangat terbuka! Jika ingin menambahkan fitur atau memperbaiki bug:
+
+1. Fork repository ini
+2. Buat branch baru (`git checkout -b fitur/nama-fitur`)
+3. Commit perubahan (`git commit -m 'Tambah fitur X'`)
+4. Push ke branch (`git push origin fitur/nama-fitur`)
+5. Buat Pull Request
+
+## 📄 Lisensi
+
+Proyek ini menggunakan lisensi [MIT](https://opensource.org/licenses/MIT) — bebas digunakan, dimodifikasi, dan didistribusikan.
+
+---
+
+<p align="center">Dibuat dengan ❤️ &amp; 🌶️ di Indonesia</p>
