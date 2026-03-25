@@ -3,60 +3,215 @@
 @section('title', 'Beranda - ' . $umkm_name)
 
 @section('content')
-    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1200&h=400&fit=crop"
-                    class="d-block w-100" alt="Banner 1" style="height: 60vh; object-fit: cover;">
-                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-4 rounded">
-                    <h1 class="fw-bold">{{ $umkm_name }}</h1>
-                    <p class="lead">{{ $description }}</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="https://images.unsplash.com/photo-1564834724105-918b73d1b9e0?w=1200&h=400&fit=crop"
-                    class="d-block w-100" alt="Banner 2" style="height: 60vh; object-fit: cover;">
-                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-4 rounded">
-                    <h1 class="fw-bold">Renyah, Pedas, Nagih!</h1>
-                    <p class="lead">Diproduksi dengan bahan berkualitas dan higienis.</p>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
 
-    <div class="container mt-5" id="produk">
-        <div class="text-center mb-5">
-            <h2 class="fw-bold text-danger">Katalog Varian Rasa</h2>
-            <p class="text-muted">Pilih level pedas yang sesuai dengan keberanianmu!</p>
-        </div>
+    {{-- ═══════════════════════════════════════════════
+    HERO SECTION
+    ════════════════════════════════════════════════ --}}
+    <section class="hero-section position-relative overflow-hidden">
+        {{-- Animated background gradient --}}
+        <div class="hero-bg-gradient"></div>
+        <div class="hero-noise"></div>
 
-        <div class="row g-4">
-            {{-- Looping data varian rasa dari Route --}}
-            @foreach ($variants as $variant)
-                <div class="col-md-3 col-sm-6">
-                    <div class="card h-100 shadow-sm border-0 border-bottom border-danger border-3 hover-shadow">
-                        <img src="{{ $variant['gambar'] }}" class="card-img-top p-3 rounded" alt="{{ $variant['nama'] }}"
-                            style="object-fit: contain; height: 150px;">
+        <div id="heroCarousel" class="carousel slide h-100" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-inner h-100">
 
-                        <div class="card-body text-center mt-3">
-                            <h5 class="card-title fw-bold text-dark">{{ $variant['nama'] }}</h5>
-                            <span class="badge bg-warning text-dark mb-3">{{ $variant['level'] }}</span>
-                            <h4 class="card-text text-danger">{{ $variant['harga'] }}</h4>
-                        </div>
-                        <div class="card-footer bg-white border-0 pb-4 text-center">
-                            <button class="btn btn-outline-danger w-75 rounded-pill">Beli Sekarang</button>
+                {{-- Slide 1 --}}
+                <div class="carousel-item active h-100">
+                    <div class="hero-slide"
+                        style="background-image: url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1400&h=700&fit=crop')">
+                        <div class="hero-overlay"></div>
+                        <div class="container h-100 d-flex align-items-center">
+                            <div class="hero-content">
+                                <span class="hero-badge">🌶️ Produk Unggulan</span>
+                                <h1 class="hero-title">{{ $umkm_name }}</h1>
+                                <p class="hero-desc">{{ $description }}</p>
+                                <div class="d-flex gap-3 mt-4 flex-wrap">
+                                    <a href="#produk" class="btn-hero-primary">
+                                        Lihat Katalog
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                            viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                        </svg>
+                                    </a>
+                                    <a href="https://wa.me/6281234567890" target="_blank" class="btn-hero-ghost">Pesan via
+                                        WA</a>
+                                </div>
+                                <div class="hero-stats mt-5">
+                                    <div class="stat-item">
+                                        <span class="stat-number">500+</span>
+                                        <span class="stat-label">Pelanggan Puas</span>
+                                    </div>
+                                    <div class="stat-divider"></div>
+                                    <div class="stat-item">
+                                        <span class="stat-number">8+</span>
+                                        <span class="stat-label">Varian Rasa</span>
+                                    </div>
+                                    <div class="stat-divider"></div>
+                                    <div class="stat-item">
+                                        <span class="stat-number">⭐ 4.9</span>
+                                        <span class="stat-label">Rating Pelanggan</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            @endforeach
+
+                {{-- Slide 2 --}}
+                <div class="carousel-item h-100">
+                    <div class="hero-slide"
+                        style="background-image: url('https://images.unsplash.com/photo-1564834724105-918b73d1b9e0?w=1400&h=700&fit=crop')">
+                        <div class="hero-overlay"></div>
+                        <div class="container h-100 d-flex align-items-center">
+                            <div class="hero-content">
+                                <span class="hero-badge">🔥 Best Seller</span>
+                                <h1 class="hero-title">Renyah, Pedas,<br><em>Nagih!</em></h1>
+                                <p class="hero-desc">Diproduksi dengan bahan berkualitas tinggi dan proses higienis yang
+                                    terjamin.</p>
+                                <div class="d-flex gap-3 mt-4 flex-wrap">
+                                    <a href="#produk" class="btn-hero-primary">
+                                        Coba Sekarang
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                            viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            {{-- Controls --}}
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="custom-carousel-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+                    </svg>
+                </span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="custom-carousel-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                    </svg>
+                </span>
+            </button>
+
+            {{-- Indicators --}}
+            <div class="hero-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="hero-dot active"
+                    aria-current="true"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" class="hero-dot"></button>
+            </div>
+        </div>
+    </section>
+
+
+    {{-- ═══════════════════════════════════════════════
+    TRUST BAR
+    ════════════════════════════════════════════════ --}}
+    <div class="trust-bar">
+        <div class="container">
+            <div class="trust-inner">
+                <div class="trust-item">
+                    <span class="trust-icon">✅</span>
+                    <span>100% Bahan Alami</span>
+                </div>
+                <div class="trust-sep">·</div>
+                <div class="trust-item">
+                    <span class="trust-icon">🏭</span>
+                    <span>Produksi Higienis</span>
+                </div>
+                <div class="trust-sep">·</div>
+                <div class="trust-item">
+                    <span class="trust-icon">🚀</span>
+                    <span>Pengiriman Cepat</span>
+                </div>
+                <div class="trust-sep">·</div>
+                <div class="trust-item">
+                    <span class="trust-icon">🌶️</span>
+                    <span>Level Pedas Beragam</span>
+                </div>
+            </div>
         </div>
     </div>
+
+
+    {{-- ═══════════════════════════════════════════════
+    PRODUCT CATALOG
+    ════════════════════════════════════════════════ --}}
+    <section class="catalog-section" id="produk">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Menu Kami</span>
+                <h2 class="section-title">Katalog <span class="text-fire">Varian Rasa</span></h2>
+                <p class="section-desc">Pilih level pedas yang sesuai dengan keberanianmu! Dari yang ringan hingga yang
+                    bikin nangis bahagia 🥵</p>
+            </div>
+
+            <div class="row g-4">
+                @foreach ($variants as $variant)
+                    <div class="col-xl-3 col-md-6">
+                        <div class="product-card">
+                            {{-- Card glow --}}
+                            <div class="product-glow"></div>
+
+                            {{-- Image container --}}
+                            <div class="product-img-wrap">
+                                <img src="{{ $variant['gambar'] }}" alt="{{ $variant['nama'] }}" class="product-img">
+                                <div class="product-level-badge">{{ $variant['level'] }}</div>
+                            </div>
+
+                            {{-- Body --}}
+                            <div class="product-body">
+                                <h5 class="product-name">{{ $variant['nama'] }}</h5>
+                                <p class="product-price">{{ $variant['harga'] }}</p>
+
+                                <a href="https://wa.me/6281234567890?text=Halo, saya mau pesan {{ urlencode($variant['nama']) }}"
+                                    target="_blank" class="btn-buy">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                                    </svg>
+                                    Beli Sekarang
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </section>
+
+
+    {{-- ═══════════════════════════════════════════════
+    CTA BANNER
+    ════════════════════════════════════════════════ --}}
+    <section class="cta-section">
+        <div class="cta-pattern"></div>
+        <div class="container position-relative">
+            <div class="cta-inner">
+                <div>
+                    <h3 class="cta-title">Siap Cobain Level Pedas Tertinggi?</h3>
+                    <p class="cta-sub">Pesan sekarang via WhatsApp dan dapatkan free ongkir untuk pembelian pertama!</p>
+                </div>
+                <a href="https://wa.me/6281234567890" target="_blank" class="btn-cta">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                        <path
+                            d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592z" />
+                    </svg>
+                    Hubungi Kami di WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
 @endsection
