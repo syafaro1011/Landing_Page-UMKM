@@ -1,16 +1,3 @@
-<p align="center">
-  <img src="https://img.shields.io/badge/🌶️-UMKM%20Seblak%20Kering-E8170A?style=for-the-badge&labelColor=111111" alt="UMKM Seblak Kering" width="400">
-</p>
-
-<p align="center">
-  <a href="https://laravel.com"><img src="https://img.shields.io/badge/Laravel-11.x-FF2D20?style=flat&logo=laravel&logoColor=white" alt="Laravel"></a>
-  <a href="https://tailwindcss.com"><img src="https://img.shields.io/badge/Tailwind_CSS-4.x-06B6D4?style=flat&logo=tailwindcss&logoColor=white" alt="Tailwind CSS"></a>
-  <a href="https://getbootstrap.com"><img src="https://img.shields.io/badge/Bootstrap-5.x-7952B3?style=flat&logo=bootstrap&logoColor=white" alt="Bootstrap"></a>
-  <img src="https://img.shields.io/badge/License-MIT-green?style=flat" alt="License">
-</p>
-
----
-
 ## 🌶️ Tentang Proyek Ini
 
 **UMKM Seblak Kering** adalah website profil dan katalog produk digital untuk usaha camilan seblak kering. Website ini dibangun menggunakan framework Laravel dengan tampilan modern, responsif, dan berkarakter — dirancang khusus untuk memperkenalkan produk, menampilkan varian rasa, serta memudahkan pelanggan melakukan pemesanan langsung via WhatsApp.
